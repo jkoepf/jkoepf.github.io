@@ -10,7 +10,7 @@
 <body>
     
     <header>
-        <img src="./images/picofme.jpg" alt="My Profile Picture">
+        <img src="images/picofme.jpg" alt="My Profile Picture">
     <h1>Jenna Koepf</h1>
     </header>
 
@@ -27,7 +27,11 @@
     </main>
     
     <footer>
-        <p>| &copy; 2020 | Jenna Koepf | <a href="https://developer.mozilla.org/en-US/">MDN</a> | BYU-Idaho |</p>
+        <p>| &copy; 2020 | Jenna Koepf | <a href="https://developer.mozilla.org/en-US/">MDN</a> | BYU-Idaho | <br>
+            last modified <span id="date"></span></p>
+        <script>
+            document.getElementById("date").innerHTML = document.lastModified;
+            </script>
     </footer>
 
 </body>
